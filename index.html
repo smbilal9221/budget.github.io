@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./app.js" defer > </script>
+    
+</head>
+<body>
+    
+    <div id="budget">
+     <h2>Set Budget</h2>   
+        <form >
+            <input type="text" placeholder="Set-Budget" id="setBudgetTxt">
+            <br>
+            <input type="button" value="Set" onclick="setBudget()" > 
+        </form>
+    </div>
+
+    <div >
+        <h2>Add Expense</h2>
+        <form >
+            <input type="button" value="Add-Expense" onclick="AddExpLst()" >
+        </form>
+    </div>
+
+    <div id="hideAddExpense" >
+        <br>
+        <form id="formSele" >
+            <select name="catagor" id="catagory">
+                <option >Food</option>
+                <option >Fuel</option>
+                <option >Utility</option>
+                <option >Rent</option>
+                <option >Other</option>
+            </select>
+            <br>
+            <br>
+            <input type="text" placeholder="Description" id="description"><br>
+            <input type="text"  placeholder="Expense" id="amount"><br>
+            <input type="date"  id="date"><br>
+            <br>
+            <br>
+            
+            </form>
+            <br>
+            <div id="formSub">
+            <input type="button" value="Add" onclick="fieldSubmit()">
+            <br>
+            <input type="button" value="Back" onclick=" backClick()">
+            </div>
+    </div>
+
+    <div id="visbleExpeLst">
+        <h2>Expense List</h2>
+ 
+   </div>
+<div id="expRecordBorder">
+<div id="expRecord">   
+
+</div>
+</div>
+<div id="delete"> 
+    <h2>Delete item </h2>
+    <input type="text" placeholder="Index no" id="deleteItem">
+    <br>
+    <input type="button" value="Delete" onclick="delet()" >
+    
+</div>
+
+    <div id="overViewHead">
+        <h2>Over View List</h2></div>
+    <div id="overList">
+        <p > Total Buget  <br> <span id="totalBudget" > </span> </p>
+        <p > Expenses  <br> <span id="expense"> </span> </p>
+        <p > Balance  <br> <span id="balane">  </span> </p>
+    </div>
+      
+
+
+    
+</body>
+</html>
